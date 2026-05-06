@@ -1,1 +1,50 @@
+body {
+    margin: 0;
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
 
+/* Navbar */
+header {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    background: linear-gradient(to top, #111, transparent),
+                url('https://via.placeholder.com/1200x600') no-repeat center/cover;
+}
+
+/* Row */
+.row {
+    margin-left: 20px;
+}
+
+.row h3 {
+    margin-bottom: 10px;
+}
+
+/* Posters */
+.row-posters {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.row-posters img {
+    width: 300px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+/* Hover effect (Netflix style) */
+.row-posters img:hover {
+    transform: scale(1.1);
+}
